@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new4Color"
+    android:backgroundTint="@color/new4Color"
+    tools:context="com.example.dell.letschat.ProfileActivity">
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/profile_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/profile_btn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mProfielDeclinReqBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:width="30dp"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Send Request"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        tools:layout_editor_absoluteX="134dp"
+        tools:layout_editor_absoluteY="362dp" />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        app:srcCompat="@drawable/pic" />
+
+    <Button
+        android:id="@+id/mProfielDeclinReqBtn"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="Decline Friend Request"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+</RelativeLayout>
